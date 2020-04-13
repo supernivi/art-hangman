@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,600i,700,800&display=swap");
+
+:root {
+  /* background-color: #ffffff; */
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 36px;
+  height: 48px;
+}
+
+.results-social {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: medium;
+  text-align: center;
+  justify-content: center;
+  clear: both;
+  padding-top: 90px;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#hint {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: #56a5eb;
+  margin-bottom: 5rem;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/* UTILITIES */
+.main-container {
+  background: #fff;
+  margin: 10px 39.8%;
+  border: 2px solid #000;
+  border-radius: 24px;
+  background: url(https://d33wubrfki0l68.cloudfront.net/a22eae9b9425d865a7ff6e5fba4d675c217cb000/bg.jpg);
+  min-height: 97.5vh;
+  background-size: 160vh;
+  align-items: center;
+}
+
+.container {
+  /* width: 100vw; */
+  min-height: 80vh;
+  max-height: 148vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+.btn {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 23rem;
+  text-align: center;
+  border: 1.4px solid #000000;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #333;
+  background-color: #fbdd56;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* FORMS */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+@media (max-width: 900px){
+  body{
+    min-height: 80vh;
+  }
+  .main-container {
+    margin: 10px auto;
+    width: 95%;
+    min-height: 77.5vh;
+  }
+  .container{
+    min-height: 77.5vh;
+  }
+}
