@@ -5,7 +5,7 @@
 } */
 body {
   min-height: 90vh;
-  background-color: #FBDD56;
+  background-color: #fbdd56;
   font-size: 1rem;
   box-sizing: border-box !important;
 }
@@ -43,7 +43,7 @@ p {
   padding-top: 20px;
 }
 
-.btn1{
+.btn1 {
   display: inline-block !important;
   color: #212529;
   text-align: center;
@@ -54,11 +54,12 @@ p {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: .375rem .75rem !important;
+  padding: 0.375rem 0.75rem !important;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: .25rem !important;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-radius: 0.25rem !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 }
 
 #correctAns {
@@ -410,7 +411,6 @@ p {
 }
 
 @media screen and (min-width: 1080px) {
-
   .main-container {
     /* background: none;
     background-size: 164vh; */
@@ -612,5 +612,23 @@ p {
   #alphabet > .row > button {
     height: 2.4rem;
     margin: 0.2rem;
+  }
+}
+
+/* custom #suraj */
+
+.main-container {
+  text-align: center;
+}
+
+.home-link {
+  position: absolute;
+  bottom: 0px;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 520px) {
+  .home-link {
+    bottom: 1rem;
   }
 }

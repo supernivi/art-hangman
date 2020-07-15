@@ -11,15 +11,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
   <link rel="stylesheet" href="./style.css">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131255348-7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131255348-7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-131255348-7');
-</script>
+    gtag('config', 'UA-131255348-7');
+  </script>
 
 
 </head>
@@ -27,7 +27,8 @@
 <body>
 
   <div class="main-container">
-    <img src="https://guesstheartist.netlify.com/img/af.png" alt="Logo" class="logo">
+    <a href="https://www.artfervour.com"><img src="https://guesstheartist.netlify.com/img/af.png" alt="Logo"
+        class="logo"></a>
     <img src="./correct.jpg" alt="" id="correctAns">
     <div class="container-fluid small-wrap">
       <div id="hangman-figure">
@@ -111,11 +112,11 @@
       <p style="padding-top: 24px; padding-bottom: 14px; font-weight: 600;">Question : <span id="quesNum"
           style="margin-right: 20px;"></span><span id="scoreCount"></span></p>
       <div id="toggle-skip">
-          <button id="skip" class="btn1 btn-primary" style="margin-bottom: 16px;">Skip Question</button>
+        <button id="skip" class="btn1 btn-primary" style="margin-bottom: 16px;">Skip Question</button>
       </div>
       <div id="toggle-skip1">
         <button id="skip1" class="btn1 btn-primary" style="margin-bottom: 16px;">Skip Question</button>
-    </div>
+      </div>
     </div>
     <div class="play-buttons">
       <button id="newGame" class="btn btn-secondary btn-sm">Play Game</button>
@@ -134,6 +135,7 @@
             style="height: 32px; width: 32px; display: inline-block; margin-top: 0px" alt=""></a>
       </div>
     </div>
+    <a class="home-link" href="https://www.artfervour.com">Return Home</a>
   </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.js'></script>
