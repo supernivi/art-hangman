@@ -11,15 +11,16 @@ body {
 }
 
 .main-container {
-  background: #fff;
   width: 95%;
-  margin: 10px auto;
-  border: 2px solid #000;
-  border-radius: 24px;
-  background: url(./bg.jpg);
   min-height: 90vh;
-  background-size: 160vh;
+  margin: 10px auto;
+  position: relative;
+  background: #fff;
+  border-radius: 24px;
   align-items: center;
+  background-size: 160vh;
+  border: 2px solid #000;
+  background: url(./bg.jpg);
 }
 
 p {
@@ -58,8 +59,8 @@ p {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: 0.25rem !important;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 #correctAns {
@@ -617,14 +618,36 @@ p {
 
 /* custom #suraj */
 
+html {
+  height: 100%;
+}
+
 .main-container {
+  height: 100%;
+  display: flex;
+  min-height: 650px;
   text-align: center;
+  flex-direction: column;
+}
+
+.play-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-buttons .btn.btn-primary {
+  min-width: 200px;
+}
+
+.bottom-spacer {
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-height: 2rem;
 }
 
 .home-link {
-  position: absolute;
-  bottom: 0px;
-  transform: translate(-50%);
+  position: relative;
+  bottom: 0.6rem;
 }
 
 @media screen and (min-width: 520px) {
