@@ -65,12 +65,34 @@ $('#skip').click(() => {
   }
 });
 
+
 $('#skip1').click(() => {
   ++skipCounter
   console.log("QuesIndex : " + quesIndex);
   console.log("SkipCounter : " + skipCounter);
   setTimeout(()=>gameOver(), 800);
 });
+
+
+/*$('#skip').click(() => {
+  console.log("QuesIndex : " + quesIndex);
+  if (quesIndex < 9 && skipCounter < 8) {
+    ++skipCounter;
+    console.log("SkipCounter : " + skipCounter);
+    setTimeout(()=>initialize(), 700);
+  }
+  else if(skipCounter == 9) {
+  	console.log("QuesIndex : " + quesIndex);
+	console.log("SkipCounter : " + skipCounter);
+	setTimeout(()=>gameOver(), 800);
+  }
+  else {
+  	++skipCounter
+	console.log("QuesIndex : " + quesIndex);
+	console.log("SkipCounter : " + skipCounter);
+	setTimeout(()=>gameOver(), 800);
+  }
+});*/
 
 async function getWord() {
   questionCounter = fetch("data.json").then((res) => res.json()).then(data => questionCounter = data.length);
